@@ -1,0 +1,9 @@
+.bg-image {
+  background-image: url('/subtract.png'); /* Default desktop */
+}
+
+@media (max-width: 767px) {
+  .bg-image {
+    background-image: url('/union.svg'); /* Mobile version */
+  }
+}

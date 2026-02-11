@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.input {
+  @apply w-full rounded-2xl bg-[#F9E6CF] px-5 py-3 outline-none 
+         ring-2 ring-red-300 focus:ring-red-600 shadow-inner;
+}

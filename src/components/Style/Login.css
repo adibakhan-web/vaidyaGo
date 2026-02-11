@@ -1,0 +1,9 @@
+/* src/styles/LoginPage.css */
+@media (max-width: 1011px) and (min-width: 790px) {
+  .custom-signup-btn {
+    top: 160px !important;
+    left: 250px !important;
+    width: 100px !important;
+    height: 100px !important;
+  }
+}
