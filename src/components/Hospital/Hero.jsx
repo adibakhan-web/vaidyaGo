@@ -150,25 +150,27 @@ const Hero = () => {
 
 {/* hero */}
      {/* ================= HERO SECTION ================= */}
-<section className="relative bg-[#f5f7f7] overflow-hidden pb-24">
+    <section
+  className="relative bg-cover bg-[right_70%] bg-no-repeat pt-10 pb-1"
+  style={{ backgroundImage: "url('/herobg.jpg')" }}
+>
 
-  <div className="max-w-7xl mx-auto px-6 md:px-12 py-20 grid md:grid-cols-2 items-center gap-12">
+  <div className="max-w-7xl mx-auto px-6 md:px-12 pt-10 pb-20 grid md:grid-cols-2 gap-12">
 
     {/* LEFT CONTENT */}
-    <div>
-      <p className="text-gray-600 mb-4 text-lg">
+    <div className="-mt-10">
+      <p className="text-gray-600 text-lg mb-2 pr-10 ">
         We are here for you
       </p>
 
-      <h1 className="text-4xl md:text-5xl font-bold leading-tight text-black">
+      <h1 className="text-4xl md:text-6xl font-bold leading-snug md:leading-[75px] text-black mt-2">
         What Makes Us <br />
         Better, Makes <br />
         You Better.
       </h1>
 
-      <p className="text-gray-500 mt-6 max-w-md">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      <p className="text-gray-500  max-w-md">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
       </p>
 
       <button className="mt-8 bg-[#19718A] text-white px-6 py-3 rounded-full shadow-lg hover:bg-[#0C6173] transition-all duration-300">
@@ -178,57 +180,41 @@ const Hero = () => {
 
     {/* RIGHT IMAGE */}
     <div className="relative flex justify-center">
-
-      <div className="absolute w-[380px] h-[380px] bg-[#19718A]/20 rounded-full"></div>
-
       <img
-        src="/doctor.png"
+        src="/hero2.png"
         alt="Doctor"
-        className="relative z-10 w-[350px] md:w-[400px]"
+        className=" relative -top-12 h-[600px] w-auto mr-60"
       />
 
       {/* Floating Cards */}
-      <div className="absolute top-10 right-4 bg-[#a7c6cc] px-6 py-3 rounded-xl shadow-md">
+      <div className="absolute -top-10 mt-10 right-42  bg-[#a7c6cc] px-8 py-3 rounded-xl shadow-md">
+        <span className="text-xl font-bold">20k Reviews</span>
+      </div>
+      <div className="absolute top-10 mt-8 right-16 bg-[#a7c6cc] px-12 py-3 rounded-xl shadow-md">
         <span className="text-xl font-bold">20k Reviews</span>
       </div>
 
-      <div className="absolute top-32 right-0 bg-[#a7c6cc] px-6 py-3 rounded-xl shadow-md">
+      <div className="absolute top-[150px] right-20 bg-[#a7c6cc] px-8 py-3 rounded-xl shadow-md">
         <span className="text-xl font-bold">100+ Happy Client</span>
       </div>
-
     </div>
+
   </div>
 
   {/* BOOKING BAR */}
-  <div className="bg-[#19718A] py-8 px-6 md:px-12">
-    <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-6">
-
-      <input
-        type="text"
-        placeholder="Enter Your Name"
-        className="px-5 py-3 rounded-lg outline-none w-full"
-      />
-
-      <input
-        type="text"
-        placeholder="Select Your Location"
-        className="px-5 py-3 rounded-lg outline-none w-full"
-      />
-
-      <input
-        type="text"
-        placeholder="Select Services"
-        className="px-5 py-3 rounded-lg outline-none w-full"
-      />
-
+  <div className="relative -mt-48 z-10 bg-[#19718A] py-8 px-6 md:px-10 max-w-7xl mx-auto rounded-xl shadow-xl">
+    <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+      <input type="text" placeholder="Enter Your Name" className="px-5 py-3 rounded-lg outline-none w-full" />
+      <input type="text" placeholder="Select Your Location" className="px-5 py-3 rounded-lg outline-none w-full" />
+      <input type="text" placeholder="Select Services" className="px-5 py-3 rounded-lg outline-none w-full" />
       <button className="bg-green-500 text-white font-semibold rounded-lg py-3 hover:bg-green-600 transition-all">
         BOOK NOW
       </button>
-
     </div>
   </div>
 
 </section>
+
 
 
 
